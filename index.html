@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="lib/anime.min.js" defer></script>
+
+	<title>Photo Gallery</title>
+
+	<script src="https://kit.fontawesome.com/1ea8f7f076.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" defer></script>
+	<script src="https://kit.fontawesome.com/1ea8f7f076.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<section>
+		<div id='box'>
+			<div class='box1'>
+				<i class="fa-solid fa-mug-saucer"> <br>Loading....</i>
+			</div>
+
+		</div>
+
+		<header>
+			<div class='logo'>
+
+				<h1><i class="fa-solid fa-photo-film"></i>Flickr Photo Gallery</h1>
+			</div>
+
+			<nav>
+
+<form>				
+
+				<ul>
+
+					<li>
+							<input type="text" id='search' placeholder='Search for' class='search'>
+					
+					</li>
+							<div class="dropdown">
+								<button type="button" class="dropdown-toggle">Select sort-options</button>
+
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<button type="button" value ="relevance"
+											class="dropdown-option">relevance</button>
+									</li>
+
+									<li class="dropdown-item">
+										<button type="button" value ="interestingness-asc"
+											class="dropdown-option">interestingness-asc</button>
+									</li>
+
+									<li class="dropdown-item">
+										<button type="button" value ="date-posted-asc"
+											class="dropdown-option">date-posted-asc</button>
+									</li>
+								</ul>
+							</div> 
+					</li>
+
+					<li>
+						<select id="size-options" name="size-options" required>
+							<option value="" disabled selected>
+								Select size-options</option>
+							<option value="w">Small</option>
+							<option value="c">Medium</option>
+							<option value="b">Large</option>
+						</select>
+					</li>
+
+
+					<li>
+						<select id="number-options" name="number-options" required>
+							<option value="" disabled selected>
+								Select number of images</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+						</select>
+
+					</li>
+
+					<li>
+						<button class='searchButton'>
+	
+							<i class="fa-solid fa-rocket"></i>
+						</button>
+				
+					</li>
+
+				</ul>
+</form>
+			</nav>
+
+		</header>
+	</section>
+
+	<section>
+		<div class='gallery'>
+			<div class='photoContainer'></div>
+		</div>
+	</section>
+
+
+	<section class="pop-up pop-up-hide">
+		<button class="pop-up_refresh"><i class="fa-solid fa-rotate"></i>
+		</button>
+		<span class="pop-up_message">Hello! Do It Again!!</span>
+	</section>
+
+</body>
+
+</html>
